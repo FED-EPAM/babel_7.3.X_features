@@ -1,0 +1,27 @@
+{
+  "name": "pipeline-operator",
+  "version": "1.0.0",
+  "description": "This projects allows one to use the Pipeline Operator",
+  "main": "output.js",
+  "scripts": {
+    "start": "babel index.js --out-file output.js && node output.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/parser": "7.3.1",
+    "@babel/traverse": "7.2.3",
+    "@babel/generator": "7.3.0",
+    "@babel/cli": "7.2.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.3.0",
+    "@babel/plugin-proposal-private-methods": "^7.3.0"
+  }
+}
