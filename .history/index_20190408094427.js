@@ -61,20 +61,8 @@ console.log(user);
 
 
 
-const player = {
-  score: 10
-}
+const sum = (a, b) => a+b;
 
-function add(x, y) { return x + y; }
+const fromTen = (a) => sum(a, 10);
 
-const addOne = add(1, ?); // apply from the left
-addOne(2); // 3
-
-const addTen = add(?, 10); // apply from the right
-addTen(2); // 12
-
-// with pipeline
-let newScore = player.score
-  |> add(7, ?)
-
-  console.log('newScore', newScore);
+const fromTen2 = sum.bind(this, 10);

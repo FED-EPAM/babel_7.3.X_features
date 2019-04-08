@@ -61,11 +61,8 @@ console.log(user);
 
 
 
-const player = {
-  score: 10
-}
 
-function add(x, y) { return x + y; }
+
 
 const addOne = add(1, ?); // apply from the left
 addOne(2); // 3
@@ -76,5 +73,10 @@ addTen(2); // 12
 // with pipeline
 let newScore = player.score
   |> add(7, ?)
+  |> clamp(0, 100, ?); // shallow stack, the pipe to `clamp` is the same frame as the pipe to `add`.
 
-  console.log('newScore', newScore);
+// partial template strings
+const Diagnostics = {
+  unexpected_token: `Unexpected token: ${?}`,
+  name_not_found: `'${?}' not found.`
+};

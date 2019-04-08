@@ -71,10 +71,8 @@ const addOne = add(1, ?); // apply from the left
 addOne(2); // 3
 
 const addTen = add(?, 10); // apply from the right
-addTen(2); // 12
+addTen(2, 10); // 12
 
 // with pipeline
 let newScore = player.score
   |> add(7, ?)
-
-  console.log('newScore', newScore);

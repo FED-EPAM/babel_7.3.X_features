@@ -76,5 +76,3 @@ addTen(2); // 12
 // with pipeline
 let newScore = player.score
   |> add(7, ?)
-
-  console.log('newScore', newScore);

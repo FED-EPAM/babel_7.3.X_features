@@ -62,9 +62,8 @@ console.log(user);
 
 
 const player = {
-  score: 10
+  player.score: 10
 }
-
 function add(x, y) { return x + y; }
 
 const addOne = add(1, ?); // apply from the left
@@ -76,5 +75,4 @@ addTen(2); // 12
 // with pipeline
 let newScore = player.score
   |> add(7, ?)
-
-  console.log('newScore', newScore);
+  |> clamp(0, 100, ?); // shallow stack, the pipe to `clamp` is the same frame as the pipe to `add`.

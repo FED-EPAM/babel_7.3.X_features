@@ -6,7 +6,7 @@ let budget = 1_000_000_000_000;
 console.log('budget', budget);
 
 const lastName = 'albert einstein'
-  |> splitOnSpaces
+  |> splitString.bind(this, )
   |> getLastOfArr
   |> capitalize;
 
@@ -60,21 +60,3 @@ user.lastName = 'Aleksandrenko';
 console.log(user);
 
 
-
-const player = {
-  score: 10
-}
-
-function add(x, y) { return x + y; }
-
-const addOne = add(1, ?); // apply from the left
-addOne(2); // 3
-
-const addTen = add(?, 10); // apply from the right
-addTen(2); // 12
-
-// with pipeline
-let newScore = player.score
-  |> add(7, ?)
-
-  console.log('newScore', newScore);
